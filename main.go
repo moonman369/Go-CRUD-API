@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"math/rand"
 	"net/http"
 	"strconv"
@@ -103,5 +104,7 @@ func main() {
 
 	fmt.Println("Starting server at port 8000")
 	// log.Fatal(http.ListenAndServe("0.0.0.0:8000", r))
-	http.ListenAndServe("0.0.0.0:8000", r)
+	if err := http.ListenAndServe("0.0.0.0:8000", r); err != nil {
+		log.Fatal(err)
+	}
 }
