@@ -102,9 +102,9 @@ func main() {
 	r.HandleFunc("/movies/{id}", updateMovie).Methods("PUT")
 	r.HandleFunc("/movies/{id}", deleteMovie).Methods("DELETE")
 
-	fmt.Println("Starting server at port 8000")
+	fmt.Println("Starting server at port 8080")
 	// log.Fatal(http.ListenAndServe("0.0.0.0:8000", r))
-	if err := http.ListenAndServe("0.0.0.0:8000", r); err != nil {
+	if err := http.ListenAndServe("0.0.0.0:8080", r); err != nil {
 		log.Fatal(err)
 	}
 }
