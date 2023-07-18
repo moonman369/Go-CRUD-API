@@ -3,6 +3,7 @@
 # API Documentation
 
 ### 1. GET ALL MOVIES
+- Base URL: `https://go-crud-api.cleverapps.io`
 - Endpoint: `/movies`
 - Method: `GET`
 - Example Response:
@@ -32,6 +33,7 @@
 <br>
   
 ### 2. GET MOVIE BY ID
+- Base URL: `https://go-crud-api.cleverapps.io`
 - Endpoint: `/movies/[id: numeric string]`
 - Method: `GET`
 - Example Request: `/movies/2`
@@ -54,6 +56,7 @@
 
 
 ### 3. CREATE MOVIE
+- Base URL: `https://go-crud-api.cleverapps.io`
 - Endpoint: `/movies`
 - Method: `POST`
 - Example Request Body:
@@ -84,6 +87,7 @@
 
 
 ### 4. UPDATE MOVIE
+- Base URL: `https://go-crud-api.cleverapps.io`
 - Endpoint: `/movies/[id: numeric string]`
 - Method: `PUT`
 - Exmaple Request Query: `/movies/4`
@@ -116,6 +120,7 @@
 
 
 ### 5. DELETE MOVIE
+- Base URL: `https://go-crud-api.cleverapps.io`
 - Endpoint: `/movies/[id: numeric string]`
 - Method: `DELETE`
 - Exmaple Request Query: `/movies/4`
